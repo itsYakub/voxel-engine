@@ -10,6 +10,12 @@ project(voxel_engine.out)
 
 set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/main.c
+    ${CMAKE_SOURCE_DIR}/src/core.c
+    ${CMAKE_SOURCE_DIR}/src/camera.c
+    ${CMAKE_SOURCE_DIR}/src/input.c
+    ${CMAKE_SOURCE_DIR}/src/render_batch.c
+    ${CMAKE_SOURCE_DIR}/src/shader.c
+    ${CMAKE_SOURCE_DIR}/src/voxel.c
 )
 
 set(GLAD_SOURCES
@@ -17,7 +23,8 @@ set(GLAD_SOURCES
 )
 
 set(GLAD_INCLUDE
-    ${CMAKE_SOURCE_DIR}/glad/include/
+${CMAKE_SOURCE_DIR}/glad/include/
+${CMAKE_SOURCE_DIR}/include/
 )
 
 FetchContent_Declare(
